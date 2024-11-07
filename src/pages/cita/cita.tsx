@@ -21,7 +21,7 @@ export default function AgendarCitaPage() {
 
   const onSubmit = (data) => {
     console.log(data)
-    // Aquí iría la lógica para enviar los datos del formulario
+    // Lógica para enviar los datos del formulario
   }
 
   return (

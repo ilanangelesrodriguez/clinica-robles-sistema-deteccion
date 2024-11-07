@@ -20,8 +20,8 @@ export default function DefaultLayout({
           href="https://nextui-docs-v2.vercel.app?utm_source=next-pages-template"
           title="nextui.org homepage"
         >
-          <span className="text-default-600">Powered by</span>
-          <p className="text-primary">NextUI</p>
+          <span className="text-default-600">Desarrollado por</span>
+          <p className="text-primary">AgileMinds</p>
         </Link>
       </footer>
     </div>
