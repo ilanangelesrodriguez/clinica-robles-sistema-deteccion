@@ -16,6 +16,7 @@
     "@nextui-org/kbd": "2.0.34",
     "@nextui-org/link": "2.0.35",
     "@nextui-org/navbar": "2.0.37",
+    "@nextui-org/react": "^2.4.8",
     "@nextui-org/snippet": "2.0.43",
     "@nextui-org/switch": "2.0.34",
     "@nextui-org/system": "2.2.6",
@@ -23,6 +24,8 @@
     "@react-aria/visually-hidden": "3.8.12",
     "clsx": "2.1.1",
     "framer-motion": "~11.1.1",
+    "lucide-react": "^0.454.0",
+    "next-themes": "^0.4.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.23.0",
@@ -47,8 +50,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "4.1.4",
     "postcss": "8.4.38",
-    "typescript": "5.6.3",
     "prettier": "3.3.3",
+    "typescript": "5.6.3",
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2"
   }
