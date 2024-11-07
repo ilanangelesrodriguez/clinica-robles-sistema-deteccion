@@ -29,7 +29,7 @@ export default function Header() {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <motion.img
-            src="https://setemed.com.br/wp-content/uploads/2020/02/cropped-LOGO-SETEMED-1-1.png"
+            src="/logo.png"
             alt="Clínica Robles Logo"
             className="h-8 w-8 mr-2"
             whileHover={{ scale: 1.1 }}
@@ -42,7 +42,7 @@ export default function Header() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
           <motion.img
-            src="/placeholder.svg?height=32&width=32"
+            src="/logo.png"
             alt="Clínica Robles Logo"
             className="h-8 w-8 mr-2"
             whileHover={{ scale: 1.1 }}

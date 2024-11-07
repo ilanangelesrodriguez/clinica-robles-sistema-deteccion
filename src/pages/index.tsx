@@ -109,11 +109,10 @@ export default function IndexPage() {
             En Clínica Robles, utilizamos la última tecnología para garantizar diagnósticos precisos y tratamientos efectivos.
           </p>
           <Image
-            src="/placeholder.svg?height=400&width=800"
+            src="https://cdentalanayarobles.com/wp-content/uploads/2021/05/8_cli%CC%81dent-scaled.jpg"
             alt="Tecnología médica avanzada"
             className="rounded-lg shadow-lg"
             width={800}
-            height={400}
           />
         </motion.div>
 
