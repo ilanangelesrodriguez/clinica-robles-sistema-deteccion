@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { useForm, Controller } from 'react-hook-form'
 import { Input, Select, SelectItem, Textarea, Button, Card, CardBody } from "@nextui-org/react"
@@ -19,7 +18,7 @@ const specialties = [
 export default function AgendarCitaPage() {
   const { control, handleSubmit, formState: { errors } } = useForm()
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log(data)
     // Lógica para enviar los datos del formulario
   }
@@ -59,7 +58,7 @@ export default function AgendarCitaPage() {
                         placeholder="Ingrese su nombre"
                         startContent={<UserIcon className="text-default-400 pointer-events-none flex-shrink-0" />}
                         isInvalid={!!errors.nombre}
-                        errorMessage={errors.nombre?.message}
+                        errorMessage={errors.nombre?.message?.toString()}
                       />
                     )}
                   />
@@ -81,7 +80,7 @@ export default function AgendarCitaPage() {
                         placeholder="Ingrese su teléfono"
                         startContent={<PhoneIcon className="text-default-400 pointer-events-none flex-shrink-0" />}
                         isInvalid={!!errors.telefono}
-                        errorMessage={errors.telefono?.message}
+                        errorMessage={errors.telefono?.message?.toString()}
                       />
                     )}
                   />
@@ -109,7 +108,7 @@ export default function AgendarCitaPage() {
                         placeholder="Ingrese su email"
                         startContent={<MailIcon className="text-default-400 pointer-events-none flex-shrink-0" />}
                         isInvalid={!!errors.email}
-                        errorMessage={errors.email?.message}
+                        errorMessage={errors.email?.message?.toString()}
                       />
                     )}
                   />
@@ -130,7 +129,7 @@ export default function AgendarCitaPage() {
                         label="Especialidad"
                         placeholder="Seleccione la especialidad"
                         isInvalid={!!errors.especialidad}
-                        errorMessage={errors.especialidad?.message}
+                        errorMessage={errors.especialidad?.message?.toString()}
                       >
                         {specialties.map((specialty) => (
                           <SelectItem key={specialty} value={specialty}>
@@ -159,7 +158,7 @@ export default function AgendarCitaPage() {
                         placeholder="Seleccione la fecha"
                         startContent={<CalendarIcon className="text-default-400 pointer-events-none flex-shrink-0" />}
                         isInvalid={!!errors.fecha}
-                        errorMessage={errors.fecha?.message}
+                        errorMessage={errors.fecha?.message?.toString()}
                       />
                     )}
                   />
@@ -182,7 +181,7 @@ export default function AgendarCitaPage() {
                         placeholder="Seleccione la hora"
                         startContent={<ClockIcon className="text-default-400 pointer-events-none flex-shrink-0" />}
                         isInvalid={!!errors.hora}
-                        errorMessage={errors.hora?.message}
+                        errorMessage={errors.hora?.message?.toString()}
                       />
                     )}
                   />
@@ -205,7 +204,7 @@ export default function AgendarCitaPage() {
                       placeholder="Describa brevemente el motivo de su consulta"
                       startContent={<FileTextIcon className="text-default-400 pointer-events-none flex-shrink-0" />}
                       isInvalid={!!errors.motivo}
-                      errorMessage={errors.motivo?.message}
+                      errorMessage={errors.motivo?.message?.toString()}
                     />
                   )}
                 />
